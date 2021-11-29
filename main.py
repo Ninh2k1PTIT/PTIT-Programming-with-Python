@@ -113,9 +113,9 @@ def main():
     map5 = pygame.transform.scale(pygame.image.load("assets/images/map5.png"), (120, 80))
 
     #Nhac nen 
-    pygame.mixer.Channel(1).play(sound.background3)
-    pygame.mixer.Channel(0).set_volume(0.2)
-    pygame.mixer.Channel(1).set_volume(0.2)
+    pygame.mixer.Channel(1).play(sound.background3, -1)
+    pygame.mixer.Channel(0).set_volume(0.5)
+    pygame.mixer.Channel(1).set_volume(0.5)
 
     start = False
     #Vong lap game
